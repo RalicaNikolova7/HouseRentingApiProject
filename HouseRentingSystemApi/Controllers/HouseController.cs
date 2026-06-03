@@ -86,7 +86,6 @@ namespace HouseRentingSystemApi.Controllers
 				ImageUrl =model.ImageUrl
 			};
 
-			//var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 			var userEmail = User.FindFirstValue(ClaimTypes.Email);
 
 			var category = await context.Categories

@@ -21,15 +21,6 @@ namespace HouseRentingSystemApi.Data
 		public DbSet<House> Houses { get; set; }
 		public DbSet<Category> Categories { get; set; }
 
-
-		//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-		//{
-		//	if (optionsBuilder.IsConfigured == false)
-		//	{
-		//		optionsBuilder.UseSqlServer();
-		//	}
-		//}
-
 		protected override void OnModelCreating(ModelBuilder builder)
 		{
 			builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
